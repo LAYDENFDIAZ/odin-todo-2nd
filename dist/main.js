@@ -1,9 +1,1 @@
-console.log("Hello World!");
-
-// Path: dist/main.js
-
-const Ele = document.createElement("h1");
-
-Ele.innerHTML = "Hello World!";
-
-document.body.appendChild(Ele);
+(()=>{"use strict";let t=[];const e=(e,o,l,n,s,c)=>(console.log("createToDo"),console.log(e,o,l,n,s,c),t.push({title:e,description:o,dueDate:l,dateCreated:n,priority:s,status:c}),console.log(t),{title:e,description:o,dueDate:l,dateCreated:n,priority:s,status:c}),o=()=>{console.log("blankProjectLoad");let t=[];console.log(t);let e="Default Project";return t.push({projectTitle:e}),console.log(t),{projectArray:t,projectTitle:e}};o(),function(){const t=document.querySelector(".content"),e=document.createElement("h1");e.textContent="To Do List",t.appendChild(e);const l=document.createElement("div");l.textContent=o().projectTitle,t.appendChild(l)}();const l=e("My To Do","This is my to do list","2021-01-01","2021-01-01","High","In Progress"),n=e("My To Do 2","This is my to do list 2","2021-01-01","2021-01-01","High","In Progress");console.log(l),console.log(n)})();
