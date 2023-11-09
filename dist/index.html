@@ -3,9 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ToDo Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="content">
-    <script src="main.js"></script>
+
+  <body>
+    <form id="add-todo">
+      <label for="Project">Project:</label>
+      <select id="Project" name="Project">
+        <option value="DefaultProject">Default Project</option>
+        <option value="Create-New-Project">Create New Project</option>
+      </select>
+
+      <label for="Title">Title:</label>
+      <input type="text" id="Title" name="Title" />
+
+      <label for="Description">Description:</label>
+      <input type="text" id="Description" name="Description" />
+
+      <label for="DueDate">Due Date:</label>
+      <input type="date" id="DueDate" name="DueDate" />
+
+      <label for="Priority">Priority:</label>
+      <select id="Priority" name="Priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <label for="CheckList">CheckList Items Added (if any):</label>
+      <ul class="todo-ul"></ul>
+
+      <input
+        type="text"
+        id="add-to-checklist"
+        name="add-to-checklist"
+        placeholder="Add item to checklist"
+      />
+      <button class="add-to-checklist">Add Item To Checklist</button>
+      <br />
+
+      <button type="submit" class="submit-button">Submit ToDo</button>
+      <button type="reset" class="reset-button">Reset</button>
+    </form>
   </body>
 </html>
