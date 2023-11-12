@@ -1,0 +1,115 @@
+/* Reset margins and paddings for consistency */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* A more readable font */
+  background-color: #f0f4f8; /* A softer background color */
+}
+
+/* Main content styling */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Common styles for headings */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for forms and their headings */
+.form,
+.form-heading,
+.todos-heading {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 500px;
+  background-color: #fff;
+}
+
+/* Projects section styling */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Card styling within projects */
+.projects .card {
+  background-color: #68a2ec;
+  color: #333;
+  text-align: center;
+  min-height: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.projects .card:hover {
+  transform: scale(1.03);
+}
+
+/* Common button styling */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Specific styles for add-todo button */
+.add-todo-button {
+  margin-top: 40px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for checklist and todo list */
+.todo-ul,
+.check-list-label {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-ul li {
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+
+  .form,
+  .form-heading,
+  .todos-heading {
+    width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
